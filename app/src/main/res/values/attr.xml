@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <attr name="textMainColor" format="color" />
+    <attr name="backgroundMainColor" format="color" />
+    <attr name="statusbarMainColor" format="color" />
+    <attr name="drawableRes" format="reference" />
+    <attr name="textCursorRes" format="reference" />
+    <attr name="editbgRes" format="reference" />
+</resources >

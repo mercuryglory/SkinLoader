@@ -1,0 +1,5 @@
+<resources >
+    <string name="app_name" >SkinLoader</string >
+
+    <string name="theme_mode">日间模式</string>
+</resources >

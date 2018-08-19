@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mercury.skinloader.widget.ZHRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".activity.MainActivity" >
+
+    <com.mercury.skinloader.widget.ZHLinearLayout
+        android:id="@+id/ll_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <com.mercury.skinloader.widget.ZHFrameLayout
+            android:id="@+id/fl_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bottomtabbar_feed" />
+
+        </com.mercury.skinloader.widget.ZHFrameLayout >
+
+        <com.mercury.skinloader.widget.ZHFrameLayout
+            android:id="@+id/fl_discover"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_discover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bottomtabbar_discover" />
+
+        </com.mercury.skinloader.widget.ZHFrameLayout >
+
+        <com.mercury.skinloader.widget.ZHFrameLayout
+            android:id="@+id/fl_notice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_notifaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bottomtabbar_notification" />
+
+        </com.mercury.skinloader.widget.ZHFrameLayout >
+
+        <com.mercury.skinloader.widget.ZHFrameLayout
+            android:id="@+id/fl_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bottomtabbar_message" />
+
+        </com.mercury.skinloader.widget.ZHFrameLayout >
+
+        <com.mercury.skinloader.widget.ZHFrameLayout
+            android:id="@+id/fl_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bottomtabbar_more" />
+
+        </com.mercury.skinloader.widget.ZHFrameLayout >
+
+    </com.mercury.skinloader.widget.ZHLinearLayout >
+
+    <com.mercury.skinloader.widget.ZHFrameLayout
+        android:id="@+id/fl_container"
+        android:layout_above="@id/ll_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </com.mercury.skinloader.widget.ZHFrameLayout >
+
+</com.mercury.skinloader.widget.ZHRelativeLayout >

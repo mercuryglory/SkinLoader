@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+    <style name="Theme_Day" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary" >@color/colorPrimary</item >
+        <item name="colorPrimaryDark" >@color/colorPrimaryDark</item >
+        <item name="colorAccent" >@color/colorAccent</item >
+
+        <!--自定义-->
+        <item name="textMainColor">#26364D</item>
+        <item name="backgroundMainColor">#F7F8FA</item>
+        <item name="statusbarMainColor">#3F51B5</item>
+        <item name="drawableRes">@drawable/ic_live_share_day</item>
+        <item name="textCursorRes">@drawable/textcursor_day</item>
+        <item name="editbgRes">@drawable/edittext_bg_day</item>
+    </style>
+
+    <style name="Theme_Night" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary" >#555555</item >
+        <item name="colorPrimaryDark" >#26364D</item >
+        <item name="colorAccent" >#F9BF66</item >
+
+        <!--自定义-->
+        <item name="textMainColor">#F96666</item>
+        <item name="backgroundMainColor">#667080</item>
+        <item name="statusbarMainColor">#26364D</item>
+        <item name="drawableRes">@drawable/ic_live_share_night</item>
+        <item name="textCursorRes">@drawable/textcursor_night</item>
+        <item name="editbgRes">@drawable/edittext_bg_night</item>
+    </style>
+</resources >

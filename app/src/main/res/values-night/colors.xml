@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+    <!--夜间模式-->
+    <color name="colorPrimary" >#555555</color >
+    <color name="colorPrimaryDark" >#26364D</color >
+    <color name="colorAccent" >#F9BF66</color >
+
+    <color name="textColor" >#F96666</color>
+    <color name="backgroundColor">#667080</color>
+</resources >

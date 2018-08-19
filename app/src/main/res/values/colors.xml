@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+    <color name="colorPrimary" >#3F51B5</color >
+    <color name="colorPrimaryDark" >#303F9F</color >
+    <color name="colorAccent" >#FF4081</color >
+
+    <color name="blue">#427AEB</color>
+    <color name="gray">#B8C0CC</color>
+
+    <!--日间模式-->
+    <color name="textColor">#26364D</color>
+    <color name="backgroundColor" >#F7F8FA</color>
+</resources >

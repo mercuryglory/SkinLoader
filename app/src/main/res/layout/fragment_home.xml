@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mercury.skinloader.widget.ZHRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.mercury.skinloader.widget.ZHTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="首页"
+        android:textColor="?attr/textMainColor"
+        android:textSize="20sp" />
+
+    <com.mercury.skinloader.widget.ZHEditText
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/textMainColor"
+        android:textCursorDrawable="?attr/textCursorRes"
+        android:background="?attr/editbgRes"/>
+</com.mercury.skinloader.widget.ZHRelativeLayout >
