@@ -1,5 +1,7 @@
 package com.mercury.skinloader.base;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -38,15 +40,20 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     public void switchTheme(int themeMode) {
-        View decorView = this.getWindow().getDecorView();
+        final View decorView = this.getWindow().getDecorView();
         Bitmap bitmap = this.obtainCachedBitmap(decorView);
         if (decorView instanceof ViewGroup && bitmap != null) {
-            View view = new View(this);
+            final View view = new View(this);
             view.setBackground(new BitmapDrawable(getResources(), bitmap));
             ((ViewGroup) decorView).addView(view, new ViewGroup.LayoutParams(ViewGroup
                     .LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
             switchThemeInternal(themeMode);
-            view.animate().alpha(0.0f).setDuration(300L).start();
+            view.animate().alpha(0.0f).setDuration(300L).setListener(new AnimatorListenerAdapter() {
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                    ((ViewGroup) decorView).removeView(view);
+                }
+            }).start();
         }
 
 
